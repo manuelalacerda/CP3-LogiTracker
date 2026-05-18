@@ -5,7 +5,6 @@ O objetivo é aplicar conceitos de:
 
 * Clean Architecture
 * Entity Framework Core
-* Mapeamento ORM (Fluent API)
 * Persistência de dados com banco relacional
 * Migrações versionadas
 
@@ -59,6 +58,13 @@ O modelo foi implementado em C# seguindo princípios de encapsulamento e separa�
 
 ## Modelo Relacional
 ![Diagrama MER do Projeto](/docs/MER.jpg)
+
+## Print Swagger
+![Swagger](/docs/swaggerum.png)
+![Swagger](/docs/swaggerdois.png)
+
+## Print de ProblemDetails
+![ProblemDetails](/docs/problem.jpg)
 ---
 
 ## 🗄️ Banco de Dados
@@ -134,14 +140,54 @@ appsettings.json
 
 ### ▶️ Rodar o projeto:
 
+Restaurar dependências
+```bash
+dotnet restore
+```
+
+Compilar
+```bash
+dotnet build
+```
+
+Executar a API
 ```bash
 dotnet run --project LogiTracker.API
 ```
+## Swagger
+* Após executar a aplicação:
+http://localhost:5138/swagger
 
 ### Endpoints disponíveis:
+# Cargo
+* GET /api/Cargo
+* GET /api/Cargo/{id}
+* POST /api/Cargo
+* DELETE /api/Cargo/{id}
+* 
+# Carrier
+* GET /api/Carrier
+* GET /api/Carrier/{id}
+* POST /api/Carrier
+* DELETE /api/Carrier/{id}
+* 
+# Delivery
+* GET /api/Delivery
+* GET /api/Delivery/{id}
+* POST /api/Delivery
+* DELETE /api/Delivery/{id}
 
-* `GET /health` → verifica se a API está online
-* `GET /deliveries` → consulta entregas no banco
+# Driver
+* GET /api/Driver
+* GET /api/Driver/{id}
+* POST /api/Driver
+* DELETE /api/Driver/{id}
+
+# Vehicle
+* GET /api/Vehicle
+* GET /api/Vehicle/{id}
+* POST /api/Vehicle
+* DELETE /api/Vehicle/{id}
 
 ---
 
@@ -152,6 +198,8 @@ A pasta `/docs` contém:
 * Print do banco de dados gerado
 * Estrutura das tabelas
 * Modelo MER atualizado
+* Print Swagger
+* Print ProblemDetails 
 
 ---
 
