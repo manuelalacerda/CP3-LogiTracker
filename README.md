@@ -16,6 +16,10 @@ O objetivo é aplicar conceitos de:
 * **Nome:** Manuela de Lacerda Soares **RM:** 564887
 ---
 
+## 🔗 Link Swagger
+
+http://localhost:5138/swagger/index.html
+
 ## 🏗️ Domínio Escolhido
 
 O sistema **LogiTracker** atua no domínio de **Logística e Transportes**, permitindo:
